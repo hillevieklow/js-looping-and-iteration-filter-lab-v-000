@@ -8,7 +8,11 @@ function findMatching(collection, name){
   })
 }
 
-function fuzzyMatch(){
+function fuzzyMatch(collection, fuzzyName){
+  let nameLength = fuzzyName.lwngth;
+  return collection.filter(function (driverName) {
+    return driverName.slice(0, nameLength) === fuzzyName
+  })
 
 }
 
