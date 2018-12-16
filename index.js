@@ -19,3 +19,4 @@ function matchName (collection, name) {
   return collection.filter(function (driver) {
     return driver.name.toLowerCase() === name.toLowerCase();
   });
+}
